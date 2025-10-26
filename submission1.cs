@@ -19,9 +19,9 @@ namespace ConsoleApp1
 
     public class Program
     {
-        public static string xmlURL = "Your XML URL";
-        public static string xmlErrorURL = "Your Error XML URL";
-        public static string xsdURL = "Your XSD URL";
+        public static string xmlURL = "https://will-bergman.github.io/CSE445_a4/Hotels.xml"; // Q1.2
+        public static string xmlErrorURL = "https://will-bergman.github.io/CSE445_a4/HotelErrors.xml"; // Q1.3
+        public static string xsdURL = "https://will-bergman.github.io/CSE445_a4/Hotels.xsd"; // Q1.1
 
         public static void Main(string[] args)
         {
@@ -40,14 +40,64 @@ namespace ConsoleApp1
         // Q2.1
         public static string Verification(string xmlUrl, string xsdUrl)
         {
+            try
+            {
+                // Download XSD file and XML file from URLs
+                XmlSchemaSet schemas = new XmlSchemaSet();
+                XmlReaderSettings settings = new XmlReaderSettings();
 
+                // Load XSD schema
+                XmlReader xsdReader = XmlReader.Create(xsdUrl);
+                schemas.Add(null, xsdReader);
+
+                // Set validation settings
+                settings.Schemas = schemas;
+                settings.ValidationType = ValidationType.Schema;
+
+                // Handle validation events
+                settings.ValidationEventHandler += (sender, e) =>
+                {
+                    if (e.Severity == XmlSeverityType.Error || e.Severity == XmlSeverityType.Warning)
+                    {
+                        throw new Exception($"Error: {e.Message} at {e.Exception.LineNumber}:{e.Exception.LinePosition}");
+                    }
+                };
+
+                // Validate the XML
+                XmlReader xmlReader = XmlReader.Create(xmlUrl, settings);
+                while (xmlReader.Read()) { }
+
+                return "No Error";
+            }
+            catch (Exception ex)
+            {
+                return $"Error: {ex.Message}";
+            }
 
             //return "No Error" if XML is valid. Otherwise, return the desired exception message.
         }
 
         public static string Xml2Json(string xmlUrl)
         {
-            
+            try
+            {
+                // Download XML file
+                WebClient client = new WebClient();
+                string xmlContent = client.DownloadString(xmlUrl);
+
+                // Convert XML to JSON using Newtonsoft.Json
+                XmlDocument xmlDoc = new XmlDocument();
+                xmlDoc.LoadXml(xmlContent);
+
+                // Serialize the XML to JSON
+                string jsonText = JsonConvert.SerializeXmlNode(xmlDoc, Newtonsoft.Json.Formatting.Indented, true);
+
+                return jsonText;
+            }
+            catch (Exception ex)
+            {
+                return $"Error: {ex.Message}";
+            }
 
             // The returned jsonText needs to be de-serializable by Newtonsoft.Json package. (JsonConvert.DeserializeXmlNode(jsonText))
             return jsonText;

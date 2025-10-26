@@ -15,7 +15,7 @@
 
 	<!-- Hotel 2 -->
 	<Hotel Rating="4.6">
-		<Name>JW Marriott Phoenix Desert Ridge Resort & Spa</Name>
+		<Name>JW Marriott Phoenix Desert Ridge Resort &amp; Spa</Name>
 		<Phone>480-293-5000</Phone>
 		<Address NearestAirport="Sky Harbor">
 			<Number>5350</Number>
