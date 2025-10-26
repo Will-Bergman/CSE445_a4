@@ -20,7 +20,7 @@ namespace ConsoleApp1
     public class Program
     {
         public static string xmlURL = "https://will-bergman.github.io/CSE445_a4/Hotels.xml"; // Q1.2
-        public static string xmlErrorURL = "https://will-bergman.github.io/CSE445_a4/HotelErrors.xml"; // Q1.3
+        public static string xmlErrorURL = "https://will-bergman.github.io/CSE445_a4/HotelsErrors.xml"; // Q1.3
         public static string xsdURL = "https://will-bergman.github.io/CSE445_a4/Hotels.xsd"; // Q1.1
 
         public static void Main(string[] args)
