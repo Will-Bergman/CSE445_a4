@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Hotels>
+	<!-- Hotel 1 -->
+	<Hotel Rating="4.3">
+		<Name>The Westin Tempe</Name>
+		<Phone>480-968-8885</Phone>
+		<Address NearestAirport="Sky Harbor">
+			<Number>11</Number>
+			<Street>E 7th St</Street>
+			<City>Tempe</City>
+			<State>AZ</State>
+			<Zip>85281</Zip>
+		</Address>
+	</Hotel>
+
+	<!-- Hotel 2 -->
+	<Hotel Rating="4.6">
+		<Name>JW Marriott Phoenix Desert Ridge Resort & Spa</Name>
+		<Phone>480-293-5000</Phone>
+		<Address NearestAirport="Sky Harbor">
+			<Number>5350</Number>
+			<Street>E Marriott Drive</Street>
+			<City>Phoenix</City>
+			<State>AZ</State>
+			<Zip>85054</Zip>
+		</Address>
+	</Hotel>
+
+	<!-- Hotel 3 -->
+	<Hotel Rating="4.4">
+		<Name>AC Hotel Phoenix Tempe/Downtown</Name>
+		<Phone>480-642-6140</Phone>
+		<Address NearestAirport="Sky Harbor">
+			<Number>100</Number>
+			<Street>E Rio Salado Parkway</Street>
+			<City>Tempe</City>
+			<State>AZ</State>
+			<Zip>85281</Zip>
+		</Address>
+	</Hotel>
+	
+	<!-- Hotel 4 -->
+	<Hotel Rating="4.0">
+		<Name>Crowne Plaza Phoenix Airport</Name>
+		<Phone>602-273-7778</Phone>
+		<Address NearestAirport="Sky Harbor">
+			<Number>4300</Number>
+			<Street>E Washington St</Street>
+			<City>Phoenix</City>
+			<State>AZ</State>
+			<Zip>85034</Zip>
+		</Address>
+	</Hotel>
+
+	<!-- Hotel 5 -->
+	<Hotel Rating="4.2">
+		<Name>Best Western North Phoenix Hotel</Name>
+		<Phone>602-395-0900</Phone>
+		<Address NearestAirport="Sky Harbor">
+			<Number>9455</Number>
+			<Street>N Black Canyon Hwy</Street>
+			<City>Phoenix</City>
+			<State>AZ</State>
+			<Zip>85021</Zip>
+		</Address>
+	</Hotel>
+
+	<!-- Hotel 6 -->
+	<Hotel Rating="4.6">
+		<Name>Home2 Suites by Hilton Mesa Longbow</Name>
+		<Phone>480-545-6615</Phone>
+		<Address NearestAirport="Falcon Field">
+			<Number>5643</Number>
+			<Street>E Longbow Pkwy</Street>
+			<City>Mesa</City>
+			<State>AZ</State>
+			<Zip>85215</Zip>
+		</Address>
+	</Hotel>
+	
+	<!-- Hotel 7 -->
+	<Hotel Rating="4.0">
+		<Name>Westgate Painted Mountain Golf Resort</Name>
+		<Phone>480-654-3611</Phone>
+		<Address NearestAirport="Falcon Field">
+			<Number>6302</Number>
+			<Street>E McKellips Rd</Street>
+			<City>Mesa</City>
+			<State>AZ</State>
+			<Zip>85215</Zip>
+		</Address>
+	</Hotel>
+	
+	<!-- Hotel 8 -->
+	<Hotel Rating="4.4">
+		<Name>Four Points by Sheraton at Phoenix Mesa Gateway Airport</Name>
+		<Phone>480-579-2100</Phone>
+		<Address NearestAirport="Mesa Gateway">
+			<Number>6850</Number>
+			<Street>E Williams Field Rd</Street>
+			<City>Mesa</City>
+			<State>AZ</State>
+			<Zip>85212</Zip>
+		</Address>
+	</Hotel>
+	
+	<!-- Hotel 9 -->
+	<Hotel Rating="4.4">
+		<Name>Hampton Inn Queen Creek</Name>
+		<Phone>480-888-7474</Phone>
+		<Address NearestAirport="Mesa Gateway">
+			<Number>20768</Number>
+			<Street>E Maya Rd</Street>
+			<City>Queen Creek</City>
+			<State>AZ</State>
+			<Zip>85142</Zip>
+		</Address>
+	</Hotel>
+	
+	<!-- Hotel 10 -->
+	<Hotel Rating="4.1">
+		<Name>Tru by Hilton Gilbert</Name>
+		<Phone>602-567-9800</Phone>
+		<Address NearestAirport="Mesa Gateway">
+			<Number>1950</Number>
+			<Street>S Santan Village Pkwy</Street>
+			<City>Gilbert</City>
+			<State>AZ</State>
+			<Zip>85295</Zip>
+		</Address>
+	</Hotel>
+	
+</Hotels>
