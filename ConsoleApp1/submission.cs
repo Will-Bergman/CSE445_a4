@@ -44,30 +44,26 @@ namespace ConsoleApp1
             {
                 // Download XSD file and XML file from URLs
                 XmlSchemaSet schemas = new XmlSchemaSet();
-                XmlReaderSettings settings = new XmlReaderSettings();
-
-                // Load XSD schema
-                XmlReader xsdReader = XmlReader.Create(xsdUrl);
-                schemas.Add(null, xsdReader);
+                schemas.Add(null, xsdUrl);
 
                 // Set validation settings
-                settings.Schemas = schemas;
-                settings.ValidationType = ValidationType.Schema;
-
-                // Handle validation events
+                string errors = "";
+                XmlReaderSettings settings = new XmlReaderSettings
+                {
+                    Schemas = schemas,
+                    ValidationType = ValidationType.Schema
+                };
+                // Handle validation errors
                 settings.ValidationEventHandler += (sender, e) =>
                 {
-                    if (e.Severity == XmlSeverityType.Error || e.Severity == XmlSeverityType.Warning)
-                    {
-                        throw new Exception($"Error: {e.Message} at {e.Exception.LineNumber}:{e.Exception.LinePosition}");
-                    }
+                    errors += $"Error: {e.Message}\n";
                 };
 
                 // Validate the XML
-                XmlReader xmlReader = XmlReader.Create(xmlUrl, settings);
-                while (xmlReader.Read()) { }
+                using (XmlReader xmlReader = XmlReader.Create(xmlUrl, settings))
+                    while (xmlReader.Read()) { }
 
-                return "No Error";
+                return string.IsNullOrEmpty(errors) ? "No Error" : errors.Trim();
             }
             catch (Exception ex)
             {
@@ -95,6 +91,7 @@ namespace ConsoleApp1
 
                     // Serialize the XML to JSON
                     string jsonText = JsonConvert.SerializeXmlNode(root, Newtonsoft.Json.Formatting.Indented, true);
+                    jsonText = jsonText.Replace("\"@", "\"_");
 
                     // Confirm validity by deserialization
                     JsonConvert.DeserializeXmlNode(jsonText);
