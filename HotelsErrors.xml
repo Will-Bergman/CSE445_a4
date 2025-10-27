@@ -5,8 +5,8 @@
 
 	<!-- Hotel 1 -->
 	<Hotel Rating="4.3">
-		<Phone>480-968-8885</Phone>
 		<Name>The Westin Tempe</Name>
+		<Phone>480-968-8885</Phone>
 		<Address NearestAirport="Sky Harbor">
 			<Number>11</Number>
 			<Street>E 7th St</Street>
@@ -18,8 +18,8 @@
 
 	<!-- Hotel 2 -->
 	<Hotel Rating="4.6">
-		<Phone>480-293-5000</Phone>
 		<Name>JW Marriott Phoenix Desert Ridge Resort And Spa</Name>
+		<Phone>480-293-5000</Phone>
 		<Address>
 			<!-- Error 2: NearestAirport missing -->
 			<Number>5350</Number>
@@ -32,8 +32,8 @@
 
 	<!-- Hotel 3 -->
 	<Hotel Rating="4.4">
-		<Phone>480-642-6140</Phone>
 		<Name>AC Hotel Phoenix Tempe/Downtown</Name>
+		<Phone>480-642-6140</Phone>
 		<!-- Error 3: Missing Phone element -->
 		<Address NearestAirport="Sky Harbor">
 			<Number>100</Number>
@@ -46,8 +46,8 @@
 
 	<!-- Hotel 4 -->
 	<Hotel Rating="4.0">
-		<Phone>602-273-7778</Phone>
 		<Name>Crowne Plaza Phoenix Airport</Name>
+		<Phone>602-273-7778</Phone>
 		<Address NearestAirport="Sky Harbor">
 			<Number>4300</Number>
 			<Street>E Washington St</Street>
@@ -59,9 +59,9 @@
 
 	<!-- Hotel 5 -->
 	<Hotel Rating="4.2">
-		<Phone>602-395-0900</Phone>
 		<Name>Best Western North Phoenix Hotel</Name>
 		<Name>Hilton Phoenix Tapatio Cliffs Resort</Name>
+		<Phone>602-395-0900</Phone>
 		<!-- Error 5: Two <Name> elements -->
 		<Address NearestAirport="Sky Harbor">
 			<Number>9455</Number>
@@ -74,8 +74,8 @@
 
 	<!-- Hotel 6 -->
 	<Hotel Rating="4.6">
-		<Phone>480-545-6615</Phone>
 		<Name>Home2 Suites by Hilton Mesa Longbow</Name>
+		<Phone>480-545-6615</Phone>
 		<Address NearestAirport="Falcon Field">
 			<Number>5643</Number>
 			<Street>E Longbow Pkwy</Street>
@@ -87,8 +87,8 @@
 
 	<!-- Hotel 7 -->
 	<Hotel Rating="4.0">
-		<Phone>480-654-3611</Phone>
 		<Name>Westgate Painted Mountain Golf Resort</Name>
+		<Phone>480-654-3611</Phone>
 		<Address NearestAirport="Falcon Field">
 			<Number>6302</Number>
 			<Street>E McKellips Rd</Street>
@@ -100,8 +100,8 @@
 
 	<!-- Hotel 8 -->
 	<Hotel Rating="4.4">
-		<Phone>480-579-2100</Phone>
 		<Name>Four Points by Sheraton at Phoenix Mesa Gateway Airport</Name>
+		<Phone>480-579-2100</Phone>
 		<Address NearestAirport="Mesa Gateway">
 			<Number>6850</Number>
 			<Street>E Williams Field Rd</Street>
@@ -113,8 +113,8 @@
 
 	<!-- Hotel 9 -->
 	<Hotel Rating="4.4">
-		<Phone>480-888-7474</Phone>
 		<Name>Hampton Inn Queen Creek</Name>
+		<Phone>480-888-7474</Phone>
 		<Address NearestAirport="Mesa Gateway">
 			<Number>20768</Number>
 			<Street>E Maya Rd</Street>
@@ -126,8 +126,8 @@
 
 	<!-- Hotel 10 -->
 	<Hotel Rating="4.1">
-		<Phone>602-567-9800</Phone>
 		<Name>Tru by Hilton Gilbert</Name>
+		<Phone>602-567-9800</Phone>
 		<Address NearestAirport="Mesa Gateway">
 			<Number>1950</Number>
 			<Street>S Santan Village Pkwy</Street>
