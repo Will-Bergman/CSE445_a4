@@ -99,6 +99,11 @@ namespace ConsoleApp1
                 jsonText = jsonText.Replace("<root>", "{\"Hotels\": {\"Hotel\":").Replace("</root>", "}}");
                 jsonText = jsonText.Replace(",\"_Rating\": null", "");
 
+                if (!jsonText.Contains("Hotels"))
+                {
+                    throw new Exception("Error: Invalid root element, expected 'Hotels'.");
+                }
+
                 return jsonText;
             }
             catch (Exception ex)
