@@ -18,7 +18,7 @@
 	<!-- Hotel 2 -->
 	<Hotel Rating="4.6">
 		<Phone>480-293-5000</Phone>
-		<Name>JW Marriott Phoenix Desert Ridge Resort &amp; Spa</Name>
+		<Name>JW Marriott Phoenix Desert Ridge Resort And Spa</Name>
 		<Address>
 			<!-- Error 2: NearestAirport missing -->
 			<Number>5350</Number>
