@@ -6,7 +6,7 @@
 	<Hotel Rating="4.3">
 		<Phone>480-968-8885</Phone>
 		<Name>The Westin Tempe</Name>
-		<Address NearstAirport="Sky Harbor">
+		<Address NearestAirport="Sky Harbor">
 			<Number>11</Number>
 			<Street>E 7th St</Street>
 			<City>Tempe</City>
@@ -34,7 +34,7 @@
 		<Phone>480-642-6140</Phone>
 		<Name>AC Hotel Phoenix Tempe/Downtown</Name>
 		<!-- Error 3: Missing Phone element -->
-		<Address NearstAirport="Sky Harbor">
+		<Address NearestAirport="Sky Harbor">
 			<Number>100</Number>
 			<Street>E Rio Salado Parkway</Street>
 			<City>Tempe</City>
@@ -47,7 +47,7 @@
 	<Hotel Rating="4.0">
 		<Phone>602-273-7778</Phone>
 		<Name>Crowne Plaza Phoenix Airport</Name>
-		<Address NearstAirport="Sky Harbor">
+		<Address NearestAirport="Sky Harbor">
 			<Number>4300</Number>
 			<Street>E Washington St</Street>
 			<City>Phoenix</City>
@@ -62,7 +62,7 @@
 		<Name>Best Western North Phoenix Hotel</Name>
 		<Name>Hilton Phoenix Tapatio Cliffs Resort</Name>
 		<!-- Error 5: Two <Name> elements -->
-		<Address NearstAirport="Sky Harbor">
+		<Address NearestAirport="Sky Harbor">
 			<Number>9455</Number>
 			<Street>N Black Canyon Hwy</Street>
 			<City>Phoenix</City>
@@ -75,7 +75,7 @@
 	<Hotel Rating="4.6">
 		<Phone>480-545-6615</Phone>
 		<Name>Home2 Suites by Hilton Mesa Longbow</Name>
-		<Address NearstAirport="Falcon Field">
+		<Address NearestAirport="Falcon Field">
 			<Number>5643</Number>
 			<Street>E Longbow Pkwy</Street>
 			<City>Mesa</City>
@@ -88,7 +88,7 @@
 	<Hotel Rating="4.0">
 		<Phone>480-654-3611</Phone>
 		<Name>Westgate Painted Mountain Golf Resort</Name>
-		<Address NearstAirport="Falcon Field">
+		<Address NearestAirport="Falcon Field">
 			<Number>6302</Number>
 			<Street>E McKellips Rd</Street>
 			<City>Mesa</City>
@@ -101,7 +101,7 @@
 	<Hotel Rating="4.4">
 		<Phone>480-579-2100</Phone>
 		<Name>Four Points by Sheraton at Phoenix Mesa Gateway Airport</Name>
-		<Address NearstAirport="Mesa Gateway">
+		<Address NearestAirport="Mesa Gateway">
 			<Number>6850</Number>
 			<Street>E Williams Field Rd</Street>
 			<City>Mesa</City>
@@ -114,7 +114,7 @@
 	<Hotel Rating="4.4">
 		<Phone>480-888-7474</Phone>
 		<Name>Hampton Inn Queen Creek</Name>
-		<Address NearstAirport="Mesa Gateway">
+		<Address NearestAirport="Mesa Gateway">
 			<Number>20768</Number>
 			<Street>E Maya Rd</Street>
 			<City>Queen Creek</City>
@@ -127,7 +127,7 @@
 	<Hotel Rating="4.1">
 		<Phone>602-567-9800</Phone>
 		<Name>Tru by Hilton Gilbert</Name>
-		<Address NearstAirport="Mesa Gateway">
+		<Address NearestAirport="Mesa Gateway">
 			<Number>1950</Number>
 			<Street>S Santan Village Pkwy</Street>
 			<City>Gilbert</City>
