@@ -16,11 +16,11 @@
 	</Hotel>
 
 	<!-- Hotel 2 -->
-	<Hotel>
-		<!-- Error 2: Missing required attribute "Rating" -->
+	<Hotel Rating="4.6">
 		<Name>JW Marriott Phoenix Desert Ridge Resort &amp; Spa</Name>
 		<Phone>480-293-5000</Phone>
-		<Address NearestAirport="Sky Harbor">
+		<Address>
+			<!-- Error 2: NearestAirport missing -->
 			<Number>5350</Number>
 			<Street>E Marriott Drive</Street>
 			<City>Phoenix</City>

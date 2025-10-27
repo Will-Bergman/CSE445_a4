@@ -81,30 +81,26 @@ namespace ConsoleApp1
         {
             try
             {
-                // Download XML file
-                WebClient client = new WebClient();
-                string xmlContent = client.DownloadString(xmlUrl);
-
-                // Convert XML to JSON using Newtonsoft.Json
-                XmlDocument xmlDoc = new XmlDocument();
-                xmlDoc.LoadXml(xmlContent);
-
-                // Create root element to match the expected format
-                XmlElement root = xmlDoc.DocumentElement;
-
-                // Serialize the XML to JSON
-                string jsonText = JsonConvert.SerializeXmlNode(root, Newtonsoft.Json.Formatting.Indented, true);
-
-                // Handle the cases for root not being "Hotels" and a Rating not existing
-                jsonText = jsonText.Replace("<root>", "{\"Hotels\": {\"Hotel\":").Replace("</root>", "}}");
-                jsonText = jsonText.Replace(",\"_Rating\": null", "");
-
-                if (!jsonText.Contains("Hotels"))
+                using (WebClient client = new WebClient())
                 {
-                    throw new Exception("Error: Invalid root element, expected 'Hotels'.");
-                }
+                    // Download XML file
+                    string xmlContent = client.DownloadString(xmlUrl);
 
-                return jsonText;
+                    // Convert XML to JSON using Newtonsoft.Json
+                    XmlDocument xmlDoc = new XmlDocument();
+                    xmlDoc.LoadXml(xmlContent);
+
+                    // Create root element to match the expected format
+                    XmlElement root = xmlDoc.DocumentElement;
+
+                    // Serialize the XML to JSON
+                    string jsonText = JsonConvert.SerializeXmlNode(root, Newtonsoft.Json.Formatting.Indented, true);
+
+                    // Confirm validity by deserialization
+                    JsonConvert.DeserializeXmlNode(jsonText);
+
+                    return jsonText;
+                }
             }
             catch (Exception ex)
             {
