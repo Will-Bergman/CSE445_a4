@@ -81,6 +81,7 @@ namespace ConsoleApp1
                 {
                     // Download XML file
                     string xmlContent = client.DownloadString(xmlUrl);
+                    xmlContent = xmlContent.Replace(" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:noNamespaceSchemaLocation=\"Hotels.xsd\"", "");
 
                     // Convert XML to JSON using Newtonsoft.Json
                     XmlDocument xmlDoc = new XmlDocument();
