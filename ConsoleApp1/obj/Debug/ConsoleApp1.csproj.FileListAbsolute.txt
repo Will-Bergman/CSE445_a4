@@ -1,0 +1,10 @@
+C:\Users\willi\Desktop\CSE445\Assignment 4\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+C:\Users\willi\Desktop\CSE445\Assignment 4\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+C:\Users\willi\Desktop\CSE445\Assignment 4\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+C:\Users\willi\Desktop\CSE445\Assignment 4\ConsoleApp1\bin\Debug\Newtonsoft.Json.dll
+C:\Users\willi\Desktop\CSE445\Assignment 4\ConsoleApp1\bin\Debug\Newtonsoft.Json.xml
+C:\Users\willi\Desktop\CSE445\Assignment 4\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.AssemblyReference.cache
+C:\Users\willi\Desktop\CSE445\Assignment 4\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
+C:\Users\willi\Desktop\CSE445\Assignment 4\ConsoleApp1\obj\Debug\ConsoleA.CB28C8CC.Up2Date
+C:\Users\willi\Desktop\CSE445\Assignment 4\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+C:\Users\willi\Desktop\CSE445\Assignment 4\ConsoleApp1\obj\Debug\ConsoleApp1.pdb

@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\willi\\Desktop\\CSE445\\Assignment 4\\ConsoleApp1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D50CC38D-F9A3-4DAD-8E5D-7D657616F800}|ConsoleApp1.csproj|c:\\users\\willi\\desktop\\cse445\\assignment 4\\consoleapp1\\submission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D50CC38D-F9A3-4DAD-8E5D-7D657616F800}|ConsoleApp1.csproj|solutionrelative:submission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 356,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "submission.cs",
+              "DocumentMoniker": "C:\\Users\\willi\\Desktop\\CSE445\\Assignment 4\\ConsoleApp1\\submission.cs",
+              "RelativeDocumentMoniker": "submission.cs",
+              "ToolTip": "C:\\Users\\willi\\Desktop\\CSE445\\Assignment 4\\ConsoleApp1\\submission.cs",
+              "RelativeToolTip": "submission.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAowFsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T00:51:12.863Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
