@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Hotel>
+<Hotel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="Hotels.xsd">
 	<!-- Error 1: Root element should be Hotels -->
 
 	<!-- Hotel 1 -->
