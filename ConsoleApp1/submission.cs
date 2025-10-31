@@ -77,33 +77,36 @@ namespace ConsoleApp1
         {
             try
             {
-                using (WebClient client = new WebClient())
+                // Load XML Document
+                var Xml_doc = new XmlDocument();
+                Xml_doc.LoadXml(xmlUrl);
+
+                // fetch Hotels element
+                var root = Xml_doc.DocumentElement;
+
+                if (root != null)
                 {
-                    // Download XML file
-                    string xmlContent = client.DownloadString(xmlUrl);
-                    xmlContent = xmlContent.Replace(" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:noNamespaceSchemaLocation=\"Hotels.xsd\"", "");
-
-                    // Convert XML to JSON using Newtonsoft.Json
-                    XmlDocument xmlDoc = new XmlDocument();
-                    xmlDoc.LoadXml(xmlContent);
-
-                    // Create root element to match the expected format
-                    XmlElement root = xmlDoc.DocumentElement;
-
-                    // Serialize the XML to JSON
-                    string jsonText = JsonConvert.SerializeXmlNode(root, Newtonsoft.Json.Formatting.Indented, true);
-                    jsonText = jsonText.Replace("\"@", "\"_");
-
-                    // Confirm validity by deserialization
-                    JsonConvert.DeserializeXmlNode(jsonText);
-
-                    return jsonText;
+                    // Collect attributes to remove to avoid modifying collection while iterating
+                    var attrsToRemove = new System.Collections.Generic.List<XmlAttribute>();
+                    foreach (XmlAttribute a in root.Attributes)
+                    {
+                        if (a.Prefix == "xmlns" || a.Name.StartsWith("xmlns") || a.Prefix == "xsi" || a.Name == "xsi:noNamespaceSchemaLocation")
+                            attrsToRemove.Add(a);
+                    }
+                    foreach (var a in attrsToRemove)
+                        root.Attributes.Remove(a);
                 }
+
+                // Serialize the resulting doc
+                string jsonText = JsonConvert.SerializeXmlNode(Xml_doc, Newtonsoft.Json.Formatting.Indented, false);
+                return jsonText;
+
             }
             catch (Exception ex)
             {
                 return $"Error: {ex.Message}";
             }
+
 
             // The returned jsonText needs to be de-serializable by Newtonsoft.Json package. (JsonConvert.DeserializeXmlNode(jsonText))
         }
