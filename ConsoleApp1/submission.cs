@@ -79,7 +79,7 @@ namespace ConsoleApp1
             {
                 // Load XML Document
                 var Xml_doc = new XmlDocument();
-                Xml_doc.LoadXml(xmlUrl);
+                Xml_doc.Load(xmlUrl);
 
                 // fetch Hotels element
                 var root = Xml_doc.DocumentElement;
