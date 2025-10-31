@@ -99,6 +99,10 @@ namespace ConsoleApp1
 
                 // Serialize the resulting doc
                 string jsonText = JsonConvert.SerializeXmlNode(Xml_doc, Newtonsoft.Json.Formatting.Indented, false);
+
+                // Check to see if we can Deserialize
+                XmlDocument check = JsonConvert.DeserializeXmlNode(jsonText);
+
                 return jsonText;
 
             }
